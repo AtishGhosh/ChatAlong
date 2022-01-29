@@ -1,0 +1,67 @@
+@import url('/css/root.css');
+
+.heading {
+    text-align: center;
+    padding-bottom: 1.5rem;
+}
+
+.heading-text {
+    font-size: 5rem;
+}
+
+.content {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.user-form {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.user-label {
+    white-space: nowrap;
+}
+
+.user-input {
+    margin: 0 0.5rem;
+}
+
+.user-form-verticle {
+    display: none;
+}
+
+@media only screen and (max-width: 576px) {
+    .heading-text {
+        padding-top: 1rem;
+        font-size: 4rem;
+    }
+
+    .user-form {
+        display: none;
+    }
+
+    .user-input {
+        width: 100%;
+    }
+
+    .content {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .user-form-verticle {
+        display: block;
+    }
+
+    .user-form-verticle-child {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .user-input-verticle {
+        margin-right: 0.5rem;
+    }
+}
